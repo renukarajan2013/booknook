@@ -1,0 +1,32 @@
+        Prefix Verb   URI Pattern                     Controller#Action
+ welcome_index GET    /welcome/index(.:format)        welcome#index
+          root GET    /                               welcome#index
+       AboutUs GET    /AboutUs(.:format)              about#about
+        Browse GET    /Browse(.:format)               browse#browse
+        MyCart GET    /MyCart(.:format)               mycart#mycart
+         carts GET    /carts(.:format)                carts#index
+               POST   /carts(.:format)                carts#create
+      new_cart GET    /carts/new(.:format)            carts#new
+     edit_cart GET    /carts/:id/edit(.:format)       carts#edit
+          cart GET    /carts/:id(.:format)            carts#show
+               PATCH  /carts/:id(.:format)            carts#update
+               PUT    /carts/:id(.:format)            carts#update
+               DELETE /carts/:id(.:format)            carts#destroy
+         books GET    /books(.:format)                books#index
+               POST   /books(.:format)                books#create
+      new_book GET    /books/new(.:format)            books#new
+     edit_book GET    /books/:id/edit(.:format)       books#edit
+          book GET    /books/:id(.:format)            books#show
+               PATCH  /books/:id(.:format)            books#update
+               PUT    /books/:id(.:format)            books#update
+               DELETE /books/:id(.:format)            books#destroy
+    cart_items GET    /cart_items(.:format)           cart_items#index
+               POST   /cart_items(.:format)           cart_items#create
+ new_cart_item GET    /cart_items/new(.:format)       cart_items#new
+edit_cart_item GET    /cart_items/:id/edit(.:format)  cart_items#edit
+     cart_item GET    /cart_items/:id(.:format)       cart_items#show
+               PATCH  /cart_items/:id(.:format)       cart_items#update
+               PUT    /cart_items/:id(.:format)       cart_items#update
+               DELETE /cart_items/:id(.:format)       cart_items#destroy
+   add_to_cart POST   /add_to_cart/:book_id(.:format) carts#add_to_cart
+    carts_show GET    /carts/:cart_id(.:format)       carts#show

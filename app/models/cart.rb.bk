@@ -1,0 +1,8 @@
+class Cart < ActiveRecord::Base
+	has_many :cart_items, :dependent =>:destroy
+
+def self.add_book (book_id)
+
+end
+
+end
